@@ -37,7 +37,7 @@ html, body {
 /* For regular background ***Uncomment this below ***/
 
 body {
-    background-image: url(/assets/images/bluecity.jpg);
+    background-image: url(../../assets/images/bluecity.jpg);
     
 }
 
@@ -88,7 +88,7 @@ nav ul li {
 /* Picture of myself */
 
 .self-portrait {
-    background-image: url(/assets/images/Gerardo.png);
+    background-image: url(../../assets/images/Gerardo.png);
     margin: auto;
     width: 50%;
     border: 3px solid rgb(32, 158, 160);;
