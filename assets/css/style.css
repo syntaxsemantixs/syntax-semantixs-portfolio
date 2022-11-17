@@ -6,21 +6,53 @@
     margin: 0;
 }
 
+/*Cool gradient background, but uses a lot of processing (uncomment below to use) */
+
+/*
+
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #ee7752, #e73c3c, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+*/
+
+/* For regular background ***Uncomment this below ***/
+
 body {
-    background-color: #1ea5e3;
+    background-image: url(/assets/images/bluecity.jpg);
+    
 }
+
 
 /* main title */
 
 .page-title {
     text-align: left;
-    color: white;
+    color: black;
 }
 
 header h1 {
     display: inline-block;
     font-size: 48px;
-    background-color:black;
+    background-color:rgb(32, 158, 160);
     border: solid white;
 }
 
@@ -29,9 +61,9 @@ header h1 {
 .right-side-headers {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
+    float: 50%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 nav ul {
@@ -41,30 +73,42 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-left: 25px;
+    background-color: rgb(32, 158, 160);
+    border: solid white;
 }
 
+.aside-card {
+    margin: 630px;
+    width: 50%;
+    border: 3px solid rgb(32, 158, 160);
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 /* Picture of myself */
 
 .self-portrait {
-    height: 300px;
-    width: 20%;
-    margin-bottom: 25px;
     background-image: url(/assets/images/Gerardo.png);
-    background-size: cover;
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(32, 158, 160);;
+    padding: 10px;
+    height: 350px;
     background-position: center;
-    margin-top: 25px;
-    margin-left: 20px;
 
 }
 
 /* contents */
+
+.about-me-div {
+    background-color: rgb(32, 158, 160);
+}
 
 .contents {
     margin-bottom: 50px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
     color: #ffffff;
     height: auto;
 }
@@ -85,13 +129,19 @@ nav ul li {
 /* work-info */
 
 .work-info {
+    margin-left: 50px;
     margin-bottom: 50px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: rgb(32, 158, 160);
     color: #ffffff;
     height: auto;
+    margin: auto;
+    width: 122%;
+    padding: 10px;
+    
+    
 }
 
 
@@ -105,6 +155,7 @@ nav ul li {
 
 .work-info ul {
     display: flex;
+    justify-content: center;
     justify-content: space-between;
     font-size: 35px;
     margin-top: 25px;
@@ -115,43 +166,100 @@ nav ul li {
 
 .screenshots {
     height: 270px;
-    
 }
+
 /* Figure within work-info */
 
 figure {
+    margin-bottom: 100px;
+}
+
+figure:hover {
     display: inline-block;
     margin-left: 0px;
     margin-right: 20px;
 }
 
+:root {
+    --outer-space:  rgb(32, 158, 160);
+    --bright-turquoise: white;
+    --gin: #e0eae4;
+    --heliotrope: black;
+  }
+
 figcaption {
     display: block;
     text-align:center;
     object-fit: contain;
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--outer-space);
+    color: var(--heliotrope);
+    border: 2px solid var(--gin);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    margin-top: 20px;
+    
 }
 
-figure img {
+
+figure img:hover {
     vertical-align: top;
     text-align: center;
     margin-top: 10px;
+    box-shadow: inset 0px 0px 8px var(--bright-turquoise), 0 0 15px var(--bright-turquoise);
 }
+
+div img {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+  }
+  div img {
+    height: 100px;
+    float: left;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+  }
+  div img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+  }
+
+
+
+.main-project-containers {
+    margin-bottom: 80px;
+}
+  
+  #main-project-height {
+    height: 400px;
+  }
 
 /* Contact-info */
 
 .contact-info {
+    margin-top: 50px;
     margin-bottom: 50px;
-    padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: rgb(32, 158, 160);
     color: #ffffff;
     height: auto;
+    width: 122%;
+    padding: 10px;
 }
 
 
 .contact-info h2 {
     font-size: 30px;
+    margin-right: px;
     text-decoration-line: underline;
     background-color: black;
     display: inline-block;
@@ -163,4 +271,67 @@ figure img {
     justify-content: space-between;
     font-size: 35px;
     margin-top: 50px;
+}
+
+.footer {
+    margin-left: 900px;
+    width: 20%;
+    border: 3px solid white;
+    background-color:rgb(32, 158, 160);;
+}
+
+footer h2 {
+    color: #ffffff;
+    text-align: center;
+  
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .aside-card {
+       margin: 0px;
+       width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact-info ul {
+        display:flex;
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .work-info ul {
+        display:flex;
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .work-info ul {
+        display:flex;
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    figcaption {
+        width: 550px;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        margin: 0px;
+        width: 20%;
+
+    }
 }

@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Syntax Semantixs Portfolio</title>
   <link rel="stylesheet" href="assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
+<div class="wrapper">
 <body>
     <header>
         <h1 class="page-title">
@@ -32,14 +33,17 @@
 
     </header>
 
-<div class="self-portrait">
+<!---<div class="self-portrait">!--->
 
 
 </div>
 <main>
-    <section id="about-me" class="contents">
-        <h2>About Me</h2>
-        <p>
+    <div class="aside-card">
+    <div class="self-portrait"></div>
+    <aside id="about-me" class="contents">
+        <div class="about-me-div">
+            <h2 class="about-me-header">About Me</h2>
+            <p class="paragraph">
             Hello, welcome to my portfolio. My name is Gerardo. I am a linguist at heart.
             I graduated from Rutgers University in 2019 with a degree in linguistics 
             and a minor in philosphy. I also have a passion for coding as well. I am currently in 
@@ -48,9 +52,11 @@
             to be software developer in the realm computational linguistics. Please find below my
             current projects that I have deployed and am still developing. Thank you for your time!
             Please contact me with any questions or inquires.
-        </p>
+            </p>
+        </div>
+    </div>
 
-    </section>
+    </aside>
 
     <section id="work" class="work-info">
         <h2>Work</h2>
@@ -58,24 +64,31 @@
             <figure>
             <figcaption>Favorite Music Artists</figcaption>
                 <a href="https://syntaxsemantixs.github.io/favorite-music-artists/">
-                    <img class="screenshots" src="/assets/images/favorite-music-artists-1-1.png">
+                    <div class="main-project-containers">
+                    <img class="screenshots" id="side-project-heights" src="/assets/images/favorite-music-artists-update.png">
+                    </div>
                 </a>
             </figure>
             
             <figure>
             <figcaption>Horiseon</figcaption>
                 <a href="https://syntaxsemantixs.github.io/Horiseon-code-refactor/">
-                    <img class="screenshots" src="/assets/images/horiseon.png">
+                    <div>
+                    <img class="screenshots" id="main-project-height" src="/assets/images/horiseon.png">
+                    </div>
                 </a>
             </figure>
 
             <figure>
             <figcaption>Prework Study Guide</figcaption>
                 <a href="https://syntaxsemantixs.github.io/prework-study-guide/">
-                    <img class="screenshots" src="/assets/images/pre-work-study-guide.png">
+                    <div class="main-project-containers">
+                    <img class="screenshots" id="side-project-heights" src="/assets/images/pre-work-study-guide.png">
+                    </div>
                 </a>
             </figure>
         </ul>
+
     </section>
 
     <section id="contact-me" class="contact-info">
@@ -88,34 +101,20 @@
 
     </section>
 
-    <section id="resume" class="contents">
-        <h2>Resume</h2>
-
-    </section>
-
-
 
 </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="footer">
+<div class="footer-card"></div>
 <footer>
     <h2>Made by Gerardo Ormeno-Vela</h2>
     <p>
         &copy; 2022 syntaxsemantixs productions
     </p>
 </footer>
+</div>
 </body>
 
+</div>
 </html>
