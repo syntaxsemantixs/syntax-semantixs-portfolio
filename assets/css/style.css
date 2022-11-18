@@ -78,7 +78,7 @@ nav ul li {
 }
 
 .aside-card {
-    margin: 450px;
+    margin: 600px;
     width: 35%;
     border: 3px solid rgb(32, 158, 160);
     padding: 100px;
@@ -275,7 +275,7 @@ div img {
 }
 
 .footer {
-    margin-left: 450px;
+    margin-left: 600px;
     width: 20%;
     border: 3px solid white;
     background-color:rgb(32, 158, 160);;
