@@ -78,17 +78,18 @@ nav ul li {
 }
 
 .aside-card {
-    margin: 630px;
-    width: 50%;
+    margin: 1119px;
+    width: 35%;
     border: 3px solid rgb(32, 158, 160);
-    padding: 10px;
+    padding: 100px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 /* Picture of myself */
 
 .self-portrait {
     background-image: url(../../assets/images/Gerardo.png);
+    background-repeat: no-repeat;
     margin: auto;
     width: 50%;
     border: 3px solid rgb(32, 158, 160);;
@@ -274,7 +275,7 @@ div img {
 }
 
 .footer {
-    margin-left: 900px;
+    margin-left: 1312px;
     width: 20%;
     border: 3px solid white;
     background-color:rgb(32, 158, 160);;
@@ -293,25 +294,29 @@ footer p {
 @media screen and (max-width: 992px) {
     .aside-card {
        margin: 0px;
-       width: 100%;
+       width: 150%;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .self-portrait {
+        margin: -80px;
+        width: 85%;
+        
     }
 }
 
 @media screen and (max-width: 992px) {
-    .contact-info ul {
-        display:flex;
-        flex-direction: column;
+    .about-me-div {
+        margin: -100px;
+        width: 100%;
+        margin-top: 50px;
 
     }
 }
 
-@media screen and (max-width: 992px) {
-    .work-info ul {
-        display:flex;
-        flex-direction: column;
-
-    }
-}
 
 @media screen and (max-width: 992px) {
     .work-info ul {
@@ -324,6 +329,25 @@ footer p {
 @media screen and (max-width: 992px) {
     figcaption {
         width: 550px;
+        width: 82%;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .screenshots {
+        width: 77%;
+        height: ;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact-info ul {
+        margin: 0px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
 
     }
 }
@@ -331,7 +355,7 @@ footer p {
 @media screen and (max-width: 992px) {
     .footer {
         margin: 0px;
-        width: 20%;
+        width: 100%;
 
     }
 }
